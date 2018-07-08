@@ -1,0 +1,578 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8742297C20F257B900AF5894 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8742297B20F257B900AF5894 /* Assets.xcassets */; };
+		8746E47720EF4B6D00F45E21 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8746E47620EF4B6D00F45E21 /* AppDelegate.swift */; };
+		8746E47920EF4B6E00F45E21 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8746E47820EF4B6E00F45E21 /* ViewController.swift */; };
+		8746E47E20EF4B6E00F45E21 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8746E47C20EF4B6E00F45E21 /* Main.storyboard */; };
+		8746E48A20EF4B6E00F45E21 /* CoreML_OSXTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8746E48920EF4B6E00F45E21 /* CoreML_OSXTests.swift */; };
+		8746E49520EF4B6E00F45E21 /* CoreML_OSXUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8746E49420EF4B6E00F45E21 /* CoreML_OSXUITests.swift */; };
+		8746E4A320EF4B8E00F45E21 /* ImageClassifier.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 8746E4A220EF4B8E00F45E21 /* ImageClassifier.mlmodel */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8746E48620EF4B6E00F45E21 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8746E46B20EF4B6D00F45E21 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8746E47220EF4B6D00F45E21;
+			remoteInfo = CoreML_OSX;
+		};
+		8746E49120EF4B6E00F45E21 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8746E46B20EF4B6D00F45E21 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8746E47220EF4B6D00F45E21;
+			remoteInfo = CoreML_OSX;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		8742297B20F257B900AF5894 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8746E47320EF4B6D00F45E21 /* CoreML_OSX.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoreML_OSX.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8746E47620EF4B6D00F45E21 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		8746E47820EF4B6E00F45E21 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8746E47D20EF4B6E00F45E21 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8746E47F20EF4B6E00F45E21 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8746E48020EF4B6E00F45E21 /* CoreML_OSX.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CoreML_OSX.entitlements; sourceTree = "<group>"; };
+		8746E48520EF4B6E00F45E21 /* CoreML_OSXTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoreML_OSXTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8746E48920EF4B6E00F45E21 /* CoreML_OSXTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreML_OSXTests.swift; sourceTree = "<group>"; };
+		8746E48B20EF4B6E00F45E21 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8746E49020EF4B6E00F45E21 /* CoreML_OSXUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoreML_OSXUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8746E49420EF4B6E00F45E21 /* CoreML_OSXUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreML_OSXUITests.swift; sourceTree = "<group>"; };
+		8746E49620EF4B6E00F45E21 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8746E4A220EF4B8E00F45E21 /* ImageClassifier.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = ImageClassifier.mlmodel; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8746E47020EF4B6D00F45E21 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8746E48220EF4B6E00F45E21 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8746E48D20EF4B6E00F45E21 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8746E46A20EF4B6D00F45E21 = {
+			isa = PBXGroup;
+			children = (
+				8746E47520EF4B6D00F45E21 /* CoreML_OSX */,
+				8746E48820EF4B6E00F45E21 /* CoreML_OSXTests */,
+				8746E49320EF4B6E00F45E21 /* CoreML_OSXUITests */,
+				8746E47420EF4B6D00F45E21 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8746E47420EF4B6D00F45E21 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8746E47320EF4B6D00F45E21 /* CoreML_OSX.app */,
+				8746E48520EF4B6E00F45E21 /* CoreML_OSXTests.xctest */,
+				8746E49020EF4B6E00F45E21 /* CoreML_OSXUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8746E47520EF4B6D00F45E21 /* CoreML_OSX */ = {
+			isa = PBXGroup;
+			children = (
+				8746E47620EF4B6D00F45E21 /* AppDelegate.swift */,
+				8746E47820EF4B6E00F45E21 /* ViewController.swift */,
+				8742297B20F257B900AF5894 /* Assets.xcassets */,
+				8746E4A220EF4B8E00F45E21 /* ImageClassifier.mlmodel */,
+				8746E47C20EF4B6E00F45E21 /* Main.storyboard */,
+				8746E47F20EF4B6E00F45E21 /* Info.plist */,
+				8746E48020EF4B6E00F45E21 /* CoreML_OSX.entitlements */,
+			);
+			path = CoreML_OSX;
+			sourceTree = "<group>";
+		};
+		8746E48820EF4B6E00F45E21 /* CoreML_OSXTests */ = {
+			isa = PBXGroup;
+			children = (
+				8746E48920EF4B6E00F45E21 /* CoreML_OSXTests.swift */,
+				8746E48B20EF4B6E00F45E21 /* Info.plist */,
+			);
+			path = CoreML_OSXTests;
+			sourceTree = "<group>";
+		};
+		8746E49320EF4B6E00F45E21 /* CoreML_OSXUITests */ = {
+			isa = PBXGroup;
+			children = (
+				8746E49420EF4B6E00F45E21 /* CoreML_OSXUITests.swift */,
+				8746E49620EF4B6E00F45E21 /* Info.plist */,
+			);
+			path = CoreML_OSXUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8746E47220EF4B6D00F45E21 /* CoreML_OSX */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8746E49920EF4B6E00F45E21 /* Build configuration list for PBXNativeTarget "CoreML_OSX" */;
+			buildPhases = (
+				8746E46F20EF4B6D00F45E21 /* Sources */,
+				8746E47020EF4B6D00F45E21 /* Frameworks */,
+				8746E47120EF4B6D00F45E21 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CoreML_OSX;
+			productName = CoreML_OSX;
+			productReference = 8746E47320EF4B6D00F45E21 /* CoreML_OSX.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8746E48420EF4B6E00F45E21 /* CoreML_OSXTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8746E49C20EF4B6E00F45E21 /* Build configuration list for PBXNativeTarget "CoreML_OSXTests" */;
+			buildPhases = (
+				8746E48120EF4B6E00F45E21 /* Sources */,
+				8746E48220EF4B6E00F45E21 /* Frameworks */,
+				8746E48320EF4B6E00F45E21 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8746E48720EF4B6E00F45E21 /* PBXTargetDependency */,
+			);
+			name = CoreML_OSXTests;
+			productName = CoreML_OSXTests;
+			productReference = 8746E48520EF4B6E00F45E21 /* CoreML_OSXTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		8746E48F20EF4B6E00F45E21 /* CoreML_OSXUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8746E49F20EF4B6E00F45E21 /* Build configuration list for PBXNativeTarget "CoreML_OSXUITests" */;
+			buildPhases = (
+				8746E48C20EF4B6E00F45E21 /* Sources */,
+				8746E48D20EF4B6E00F45E21 /* Frameworks */,
+				8746E48E20EF4B6E00F45E21 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8746E49220EF4B6E00F45E21 /* PBXTargetDependency */,
+			);
+			name = CoreML_OSXUITests;
+			productName = CoreML_OSXUITests;
+			productReference = 8746E49020EF4B6E00F45E21 /* CoreML_OSXUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8746E46B20EF4B6D00F45E21 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1000;
+				LastUpgradeCheck = 1000;
+				ORGANIZATIONNAME = Hiroya;
+				TargetAttributes = {
+					8746E47220EF4B6D00F45E21 = {
+						CreatedOnToolsVersion = 10.0;
+					};
+					8746E48420EF4B6E00F45E21 = {
+						CreatedOnToolsVersion = 10.0;
+						TestTargetID = 8746E47220EF4B6D00F45E21;
+					};
+					8746E48F20EF4B6E00F45E21 = {
+						CreatedOnToolsVersion = 10.0;
+						TestTargetID = 8746E47220EF4B6D00F45E21;
+					};
+				};
+			};
+			buildConfigurationList = 8746E46E20EF4B6D00F45E21 /* Build configuration list for PBXProject "CoreML_OSX" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8746E46A20EF4B6D00F45E21;
+			productRefGroup = 8746E47420EF4B6D00F45E21 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8746E47220EF4B6D00F45E21 /* CoreML_OSX */,
+				8746E48420EF4B6E00F45E21 /* CoreML_OSXTests */,
+				8746E48F20EF4B6E00F45E21 /* CoreML_OSXUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8746E47120EF4B6D00F45E21 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8742297C20F257B900AF5894 /* Assets.xcassets in Resources */,
+				8746E47E20EF4B6E00F45E21 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8746E48320EF4B6E00F45E21 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8746E48E20EF4B6E00F45E21 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8746E46F20EF4B6D00F45E21 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8746E47920EF4B6E00F45E21 /* ViewController.swift in Sources */,
+				8746E4A320EF4B8E00F45E21 /* ImageClassifier.mlmodel in Sources */,
+				8746E47720EF4B6D00F45E21 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8746E48120EF4B6E00F45E21 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8746E48A20EF4B6E00F45E21 /* CoreML_OSXTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8746E48C20EF4B6E00F45E21 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8746E49520EF4B6E00F45E21 /* CoreML_OSXUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8746E48720EF4B6E00F45E21 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8746E47220EF4B6D00F45E21 /* CoreML_OSX */;
+			targetProxy = 8746E48620EF4B6E00F45E21 /* PBXContainerItemProxy */;
+		};
+		8746E49220EF4B6E00F45E21 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8746E47220EF4B6D00F45E21 /* CoreML_OSX */;
+			targetProxy = 8746E49120EF4B6E00F45E21 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		8746E47C20EF4B6E00F45E21 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8746E47D20EF4B6E00F45E21 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8746E49720EF4B6E00F45E21 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		8746E49820EF4B6E00F45E21 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		8746E49A20EF4B6E00F45E21 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = CoreML_OSX/CoreML_OSX.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = CoreML_OSX/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Hiroya.CoreML-OSX";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+			};
+			name = Debug;
+		};
+		8746E49B20EF4B6E00F45E21 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = CoreML_OSX/CoreML_OSX.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = CoreML_OSX/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Hiroya.CoreML-OSX";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+			};
+			name = Release;
+		};
+		8746E49D20EF4B6E00F45E21 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = CoreML_OSXTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Hiroya.CoreML-OSXTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CoreML_OSX.app/Contents/MacOS/CoreML_OSX";
+			};
+			name = Debug;
+		};
+		8746E49E20EF4B6E00F45E21 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = CoreML_OSXTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Hiroya.CoreML-OSXTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CoreML_OSX.app/Contents/MacOS/CoreML_OSX";
+			};
+			name = Release;
+		};
+		8746E4A020EF4B6E00F45E21 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = CoreML_OSXUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Hiroya.CoreML-OSXUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TEST_TARGET_NAME = CoreML_OSX;
+			};
+			name = Debug;
+		};
+		8746E4A120EF4B6E00F45E21 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = CoreML_OSXUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Hiroya.CoreML-OSXUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TEST_TARGET_NAME = CoreML_OSX;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8746E46E20EF4B6D00F45E21 /* Build configuration list for PBXProject "CoreML_OSX" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8746E49720EF4B6E00F45E21 /* Debug */,
+				8746E49820EF4B6E00F45E21 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8746E49920EF4B6E00F45E21 /* Build configuration list for PBXNativeTarget "CoreML_OSX" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8746E49A20EF4B6E00F45E21 /* Debug */,
+				8746E49B20EF4B6E00F45E21 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8746E49C20EF4B6E00F45E21 /* Build configuration list for PBXNativeTarget "CoreML_OSXTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8746E49D20EF4B6E00F45E21 /* Debug */,
+				8746E49E20EF4B6E00F45E21 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8746E49F20EF4B6E00F45E21 /* Build configuration list for PBXNativeTarget "CoreML_OSXUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8746E4A020EF4B6E00F45E21 /* Debug */,
+				8746E4A120EF4B6E00F45E21 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8746E46B20EF4B6D00F45E21 /* Project object */;
+}
